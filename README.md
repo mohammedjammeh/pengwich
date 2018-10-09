@@ -1,0 +1,3 @@
+# Pengwich
+
+Pengwich was a personal summer project which I started working on after my second year at university. At this point, I just learned how to apply my knowledge regarding PHP and SQL. I thought it would be interesting to challenge myself and see if I could build a food social network which allows users to share images and recipes of meals. Additionally, users should be able to follow each and have personalised timelines. Unfortunately, I could not get the project done on time due to my dissertation. However, I have learnt a lot in terms of web security, authentication systems, data management and Object-Oriented Programming.

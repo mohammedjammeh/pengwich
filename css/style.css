@@ -1,0 +1,1681 @@
+/*************************
+		GENERAL 
+*************************/
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/************************* 
+		HEADER 
+/************************/
+header {
+	background: #006666;
+	padding: 0% 2.5% 0% 5%;
+	height: 55px;
+	position: fixed;
+	top: 0;
+	width: 92.5%;
+	box-shadow: 0 2.5px 2px -2px #003333;
+	z-index: 10;
+}
+
+header h1 {
+	font-size: 1.75em;
+	width: 30%;
+	padding: 0% 0;
+	margin: 0% 0;
+	float: left;
+}
+
+header h1 a {
+	color: #e6e6e6;
+	font-family: 'Bad Script', cursive;
+}
+
+
+.addPhoto,
+.notifications,
+.search ,
+.menu {
+	display: inline-block;
+	float: left;
+	margin: 0% 0;
+	padding: 0% 0;
+	color: #e6e6e6;
+	height: 100%;
+}
+
+.addPhoto i,
+.notifications i,
+.search i,
+.menu i {
+    transform: translateY(60%);
+}
+
+.addPhoto {
+	width: 14.5%;
+	text-align: center;
+	color: #fff;
+	margin: 0% 12.25%;
+}
+
+.search {
+	width: 10%;
+	text-align: right;
+}
+
+.menu {
+	width: 10%;
+	text-align: right;
+}
+
+.notifications {
+	width: 10%;
+	text-align: center;
+	position: relative;
+}
+
+.notifications i {
+}
+
+.notifications span {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7em;
+	position: absolute;
+	top: 7.5%;
+	right: -7.5%;
+	background: #d55d5d;
+	width: 17px;
+	padding: 5%;
+	border-radius: 50%;
+}
+
+
+/*Logged Out User*/
+a[href="login.php"] {
+	display: none;
+	background: linear-gradient(#00b3b3, #004d4d); 
+	border-radius: 50px;
+	width: 15%;
+	text-align: center;
+	text-transform: uppercase;
+	position: fixed;
+	padding: 2.5% 5%;
+	margin: 0 37.5%;
+	bottom: 2%;
+	left: 0;
+	font-size: 0.85em;
+	color: #f2f2f2;
+}
+
+
+
+/*Search Icon Click*/
+.newHeader {
+	box-shadow: 0 4px 2px -2px lightgrey;
+	background: #f2f2f2;
+	padding: 0 2%;
+	width: 100%;
+}
+
+.backArrow {
+	display: none;
+	color: #006666;
+	float: left;
+	width: 9%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	text-align: right;
+}
+
+.closeArrow {
+	display: none;
+	color: grey;
+	float: left;
+	width: 11%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	text-align: left;
+}
+
+.backArrow i {
+	font-size: 1.8em;
+	transform: translateY(50%);
+}
+
+.closeArrow i {
+	font-size: 1.35em;
+	transform: translateY(82%);
+}
+
+header input {
+	display: none;
+	width: 70%;
+	height: 100%;
+	margin: 0;
+	padding: 0 5%;
+	float: left;
+	border: none;
+	outline: none;
+	background: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.05em;
+	color: #595959;
+}
+
+
+
+/*Menu Click*/
+.menuItems {
+	display: none;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 0;
+	position: absolute;
+	top: 72%;
+	right: 4.75%;
+	width: 32.5%;
+	background: #f2f2f2;
+}
+
+.menuItems li {
+	padding: 6.5%;
+	text-align: center;
+	background: #f2f2f2;
+	transition: all 0.1s;
+}
+
+.menuItems li:hover {
+	background:  #d9d9d9;
+}
+
+.menuItems li:hover a {
+	color: #333333;
+}
+
+
+.menuItems li a {
+	padding: 6.5% 16%;
+	color: #595959;
+	font-size: 0.95em;
+}
+
+
+.menuItems li:last-child {
+	padding-bottom: 9%;
+}
+
+
+
+/*** LOGIN HEADER ***/
+.login header {
+	background: none;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	box-shadow: none;
+}
+
+.login header h1 {
+	font-size: 3em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+.login header h1 a {
+	color: #008080;
+	display: inline-block;
+	width: 95%;
+	margin: 2.5% 2.5% 0% 2.5%;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************
+		SECTION 
+*************************/
+section {
+	margin-top: 55px;
+	position: relative;
+}
+
+
+/*** LOGIN PAGE ***/
+.login {
+	background-image: url('../img/burger01.jpg');
+	background-size: cover;                   
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
+	position: relative;
+}
+
+.login div {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 20% 10% 0;
+}
+
+.login section {
+	margin: 0% 10% 15%;
+}
+
+.login .newUserMessage {
+	font-size: 1.05em;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #cccccc;
+}
+
+
+.login form[name="signInForm"] p,
+.login form[name="signUpForm"] p {
+	color: #ff3333;
+}
+
+.login input[name="userNameLogin"],
+.login input[name="passwordLogin"],
+.login input[name="fullNameSignUp"],
+.login input[name="userNameSignUp"],
+.login input[name="passwordSignUp"] {
+	width: 90%;
+	margin: 3.5% 0;
+	padding: 3% 5%;
+	border: 0;
+	border-radius: 2px;
+	background: white;
+	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
+	outline: 0;
+	opacity: 0.8;
+}
+
+.login input[name="fullName"]:focus,
+.login input[name="userName"]:focus,
+.login input[name="password"]:focus {
+	background: #f2f2f2;
+	opacity: 1;
+	transition: all 0.15s;
+}
+
+
+.login section form > fieldset {
+	color: #b3b3b3;
+	border: 0;
+	padding: 2.5% 0 2.5% 0;
+	width: 85%;
+	margin: 2% 7.5%;
+}
+
+.login section form > fieldset input {
+	transform: translateY(10%);
+}
+
+.login section form > fieldset label {
+	margin-left: 2.5%;
+}
+
+.login input[type="submit"] {
+	width: 40%;
+	text-transform: capitalize;
+	padding: 3% 2.5%;
+	margin: 5% 30% 2.5%;
+	border-radius: 5%;
+	border: 0;
+	border-bottom: 3px solid #333333;
+	font-size: 0.95em;
+	font-family: 'Open Sans', sans-serif;
+	outline: 0;
+	background: #4d4d4d;
+	color: #e6e6e6;
+	text-transform: uppercase;
+}
+
+.login input[type="submit"]:hover {
+	background: #595959;
+}
+
+.login section p {
+	text-align: center;
+	color: #cccccc;
+}
+
+.login section a {
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.login section a:hover {
+	text-decoration: underline;
+}
+
+.signIn,
+.signUp {
+	display: block;
+}
+
+
+.hide {
+	display: none;
+}
+
+
+
+
+
+
+
+
+/*Notifications*/
+.notificationsListAbsolute {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	margin: 0;
+}
+
+.notificationsListAbsolute li:last-child {
+	background: #e6e6e6;
+	padding: 3% 5%;
+	font-size: 0.9em;
+}
+
+.notificationsListAbsolute li:last-child a {
+	color: #4d4d4d;
+}
+
+.notification section > p {
+	font-size: 1.25em;
+	padding: 3% 2.5% 0%;
+	margin: 0;
+}
+
+.notification p + .notificationsList {
+	display: block;
+	margin: 0% 2.5% 2%;
+	border-radius: 3px;
+}
+
+
+.notificationsList li {
+	background: #f2f2f2;
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+	padding-bottom: 2%;
+	margin: 2.5% 0;
+}
+
+.notificationsListAbsolute li {
+	margin: 0;
+}
+
+.notificationUser {
+	background: green;
+	float: left;
+	width: 13%;
+    padding-top: 13%;
+	margin: 2.5%;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.notificationsList li:nth-child(2),
+.notificationsList li:nth-child(3) {
+	background: white;
+}
+
+.notificationUser img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+}
+
+.notificationInfo {
+	/*background: purple;*/
+	float: left;
+	width: 60%;
+	position: absolute;
+	top: 14%;
+	bottom: 5%;
+	left: 18%;
+	right: 22%;
+	margin: auto;
+}
+
+
+.notificationInfo p:first-of-type {
+	/*background: yellow;*/
+	margin: 0 0 2% 0;
+	font-size: 0.8em;
+	color: #262626;
+}
+
+.notificationInfo p:first-of-type em {
+	font-style: normal;
+	font-weight: 600;
+}
+
+
+.notificationInfo p:first-of-type + p {
+	/*background: brown;*/
+	margin: 0;
+	font-size: 0.7em;
+	color: #666666;
+}
+
+
+.notificationItself {
+	/*background: blue;*/
+	float: left;
+	width: 17.5%;
+	position: absolute;
+	top: 0;
+	left: 80%;
+	right: 2.5%;
+	bottom: 0;
+	margin: auto;
+}
+
+.notificationItself img {
+	position: absolute;
+	top: -10%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 2px;
+}
+
+
+
+
+
+
+
+/*** HOME / PROFILE (POSTS) PAGE ***/
+.posts {
+	padding: 0;
+	margin: 0;
+}
+
+.posts > li {
+	background: #fff;
+	padding: 4% 2.5% 5%;
+	margin: 0% 0;
+	border-bottom: 1px solid lightgrey;
+	position: relative;
+}
+
+
+.posts > li:last-child {
+	margin-bottom: 0%;
+	border-bottom: none;
+}
+
+.profile .posts > li:first-child {
+	border-top: 1px solid lightgrey;
+}
+
+.mealAndUserInfo {
+	width: 95%;
+	margin: 0 2.5%;
+}
+
+.userImg {
+	/*background: green;*/
+	float: left;
+	width: 15%;
+    padding-top: 15%;
+	margin: 0;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.userImg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+}
+
+.mealAttr {
+	float: left;
+	width: 81%;
+	margin: 1% 1.5% 1% 2.5%;
+	position: relative;
+}
+
+.mealAttr ul {
+	display: none;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 2.5px;
+	background: #f2f2f2;
+	position: absolute;
+	top: 12%;
+	right: 0;
+	width: 35%;
+	padding: 1.5% 0%;
+	z-index: 1;
+}
+
+.mealAttr ul li {
+	padding: 4% 15%;
+	text-align: left;
+}
+
+.mealAttr ul li a {
+	font-size: 0.95em;
+	color: #737373;
+}
+
+.mealAttr ul li a:hover {
+	color: #009999;
+}
+
+
+.userAndDate a:first-of-type {
+	/*background: blue;*/
+	float: left;
+	width: 70%;
+	font-size: 0.8em;
+	color: #595959;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.userAndDate a:first-of-type + a {
+	/*background: purple;*/
+	float: left;
+	width: 30%;
+	margin: 0;
+	text-align: right;
+	font-size: 0.75em;
+	color: #8c8c8c;
+}
+
+
+.userDateEdit a:first-of-type {
+	width: 62.5%;
+}
+
+.userDateEdit a:first-of-type + a {
+	width: 31%;
+}
+
+.userDateEdit a:first-of-type + a + a {
+	width: 5%;
+	margin-left: 1.5%;
+	position: absolute;
+	text-align: right;
+}
+
+.userDateEdit a:first-of-type + a + a i {
+	font-size: 1.25em;
+	transform: translateY(-5%);
+	color: #808080;
+}
+
+
+.mealAttr ul + a,
+.userAndDate + a {
+	margin: 2% 0;
+	display: block;
+	color: #333333;
+	font-size: 0.95em;
+}
+
+
+.mealImg img {
+	display: block;
+	border-radius: 2.5px;
+	margin: 1% 5% 3%;
+	width: 90%;
+}
+
+.mealImg img:hover {
+	opacity: .95;
+}
+
+
+.ratings {
+	width: 90%;
+	font-size: 0.95em;
+	margin: 2% 5% 0% 5%;
+} 
+
+.ratings a {
+	float: left;
+	text-align: center;
+	height: 100%;
+}
+
+.ratings a:first-of-type {
+	width: 15%;
+}
+
+.ratings a:first-of-type + a {
+	width: 37.5%;
+}
+
+.ratings a:first-of-type + a + a {
+	width: 37.5%;
+}
+
+.ratings a:first-of-type + a + a + a {
+	width: 10%;
+}
+
+.ratings a i {
+	font-size: 1.3em;
+	color: #004d4d;
+	text-align: center;
+	transform: translateY(23%) translateX(10%);
+	/*transition: all 0.5s;*/
+}
+
+.ratings a span {
+	margin: 0;
+	text-align: center;
+	color: #004d4d;
+	font-size: 1.05em;
+}
+
+.ratings a span.active {
+	color: #009999;
+}
+
+.ratings a i.active {
+	color: #009999;
+	transform: rotate(180deg) translate(-10%,-10%);
+	/*transition: all 0.5s;*/
+}
+
+.ingredients,
+.instructions {
+	/*background: green;*/
+	width: 90%;
+	margin: 0% 5% 0%;
+	padding-top: 2.5%;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.ingredients li,
+.instructions li {
+	/*background: red;*/
+	font-size: 0.95em;
+	margin: 2.5% 11.5%;
+	text-indent: -7%;
+	color: #333333;
+}
+
+.ingredients {
+	display: none;
+}
+
+.instructions {
+	display: none;
+}
+
+form[name="mealist"] {
+	display: none;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 0px;
+	position: absolute;
+	bottom: 15%;
+	right: 8%;
+	width: 45%;
+	padding: 2% 2% 1.5%;
+	background: #f2f2f2;
+}
+
+.overlayMealistFormParent {
+	position: relative;
+}
+
+.overlayDiv form[name="mealist"] {
+	width: 47%;
+	bottom: 0;
+	right: 6%;
+}
+
+
+form[name="mealist"] input {
+	margin: 5%;
+}
+
+form[name="mealist"] div,
+form[name="mealist"] input,
+form[name="mealist"] label {
+	cursor: pointer;
+}
+
+form[name="mealist"] div:hover {
+	background:  #d9d9d9;
+	transition: all 0.1s;
+}
+
+form[name="mealist"] label,
+form[name="mealist"] a {
+	color: #4d4d4d;
+	font-size: 0.93em;
+}
+
+
+form[name="mealist"] .createMealist {
+	border-top: 1px solid #cccccc;
+	padding: 2.5% 0;
+	margin: 2.5% 0 0;
+}
+
+form[name="mealist"] .createMealist:hover {
+	background: none;
+}
+
+form[name="mealist"] a {
+	display: block;
+	padding: 3.5%;
+}
+
+form[name="mealist"] a:hover {
+	background: #d9d9d9;
+	transition: all 0.1s;
+}
+
+form[name="mealist"] .createMealist input[name="newMealistInput"] {
+	width: 86%;
+	padding: 4% 4%;
+	margin: 2.5%;
+	font-family: 'Open Sans', sans-serif;
+	cursor: auto;
+	border: 1px solid lightgrey;
+	outline: none;
+	border-radius: 2px;
+	color: #595959;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+
+form[name="mealist"] .createMealist input[name="newMealistBtn"] {
+	width: 94%;
+	padding: 3% 0;
+	margin: 2.5% 3% 2.5% 3%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	border: none;
+	background: #009999;
+	border-radius: 2px;
+	color: white;
+	transition: 0.1s ease-out background;
+}
+
+form[name="mealist"] .createMealist input[name="newMealistBtn"]:hover {
+	background: #008080;
+}
+
+
+.comments {
+	display: none;
+	border-radius: 2px;
+	margin: 5% 2% 0%;
+	padding: 0;
+	border-top: 1px solid lightgrey;
+}
+
+.commentingDiv {
+	padding: 3% 1.25% 3%;
+}
+
+.commentingDiv > a {
+	float: left;
+	width: 15%;
+    padding-top: 15%;
+	margin: 0;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.commentingDiv > a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+}
+
+form[name="comment"] {
+	float: left;
+	width: 85%;
+	margin-top: 1%;
+	border: none;
+}
+
+
+
+form[name="comment"] textarea {
+	margin: 0;
+	width: 80%;
+	padding: 0% 3%;
+	margin: 0%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	border: none;
+	outline: none;
+	line-height: 1.5;
+	height: 45px;
+	color: #4d4d4d;
+}
+
+form[name="comment"] textarea:focus {
+}
+
+form[name="comment"] button {
+	text-align: center;
+	padding: 0;
+	width: 14%;
+	padding-top: 14%;
+	border: none;
+	outline: none;
+	color: white;
+	background: #006666;
+	position: relative;
+	border-radius: 50%;
+}
+
+form[name="comment"] button i {
+	font-size: 1em;
+	font-weight: 600;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(28%);
+}
+
+.comments ul {
+	margin: 0 8%;
+}
+
+.comments ul li {
+	border-top: 1px solid lightgrey;
+	padding: 3% 0 3%;
+}
+
+.commenterImg {
+	float: left;
+	width: 15%;
+    padding-top: 15%;
+	margin: 0;
+	position: relative;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.commenterImg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+}
+
+
+.commentAttr {
+	float: left;
+	width: 82.5%;
+	margin: 1% 0% 1% 2.5%;
+}
+
+
+.commenterAndDate a:first-of-type {
+	float: left;
+	width: 60%;
+	font-size: 0.8em;
+	color: #595959;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.commenterAndDate a:first-of-type + p {
+	float: left;
+	width: 40%;
+	margin: 0;
+	text-align: right;
+	font-size: 0.75em;
+	color: #8c8c8c;
+}
+
+.commenterAndDate + p {
+	margin: 2% 0;
+	display: block;
+	color: #404040;
+	font-size: 0.92em;
+}
+
+
+
+
+/*Overlay*/
+.overlay {
+	width: 95%;
+	padding: 2.5%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 20;
+	overflow-y: scroll;
+}
+
+.overlayDiv {
+	border-radius: 3px;
+	background: white;
+	padding: 5% 2.5% 3% 2.5%;
+	position: relative;
+	min-height: 91vh;
+}
+
+
+.overlayDiv form[name="mealist"] {
+	bottom: 59%;
+}
+
+.overlayDiv .ratings a span {
+	margin: 0 3%;
+}
+
+
+
+
+
+.imgOverlay {
+	z-index: 30;
+	width: 100%;
+	padding: 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.925);
+	z-index: 30;
+}
+
+.imgOverlay img {
+	position: absolute;
+	top: 2.5%;
+	left: 2.5%;
+	right: 2.5%;
+	bottom: 2.5%;
+	margin: auto;
+	border: 0.5px solid #f2f2f2;
+	width: 95%;
+}
+
+
+/*Uploading and Editing Posts*/
+.uploadingOverlay {
+	display: none;
+	width: 95%;
+	padding: 2.5%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 20;
+	overflow-y: scroll;
+}
+
+form[name="uploadForm"],
+form[name="editForm"] {
+	padding: 1.5% 1.5% 1.5%;
+	background: white;
+	border-radius: 3px;
+	min-height: 95vh;
+}
+
+
+form[name="uploadForm"] img,
+form[name="editForm"] img {
+	width: 100%;
+	margin: 3% 0%;
+	border-radius: 2px;
+}
+
+
+
+form[name="uploadForm"] fieldset,
+form[name="editForm"] fieldset {
+	border: none;
+	position: relative;
+	margin: 0% 5% 5%;
+	padding: 0;
+}
+
+form[name="uploadForm"] fieldset:first-of-type {
+	margin: 0% 5% 2.5%;
+}
+
+form[name="editForm"] fieldset:first-of-type {
+	margin: 4% 5% 2.5%;
+}
+
+form[name="editForm"] fieldset:first-of-type + fieldset {
+	margin: 0% 5% 2.5%;
+}
+
+input[name="fileUpload"],
+input[name="title"],
+input[name="ingredientsArea[]"],
+input[name="instructionsArea[]"],
+
+input[name="titleEdit"],
+input[name="ingredientsAreaEdit[]"],
+input[name="instructionsAreaEdit[]"] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.95em;
+	border: none;
+	outline: none;
+	width: 95%;
+	margin: 1.5% 0%;
+	padding: 2.5%;
+	color: #595959;
+	border-radius: 2px;
+	background: #f2f2f2;
+	transition: .15s ease-out all;
+}
+
+input[name="fileUpload"]:focus,
+input[name="title"]:focus,
+input[name="ingredientsArea[]"]:focus,
+input[name="instructionsArea[]"]:focus,
+
+input[name="titleEdit"]:focus,
+input[name="ingredientsAreaEdit[]"]:focus,
+input[name="instructionsAreaEdit[]"]:focus {
+	background: #e6e6e6;
+}
+
+
+input[name="ingredientsArea[]"],
+input[name="ingredientsAreaEdit[]"] {
+	width: 42.5%;
+	padding: 2.5%;
+}
+
+input[name="ingredientsArea[]"]:nth-child(odd),
+input[name="ingredientsAreaEdit[]"]:nth-child(odd) {
+	margin: 1.5% 0% 1.5% 2.5%;
+}
+
+input[name="ingredientsArea[]"]:nth-child(even),
+input[name="ingredientsAreaEdit[]"]:nth-child(even) {
+	margin: 1.5% 2.5% 1.5% 0%;
+}
+
+form[name="uploadForm"] label,
+form[name="editForm"] label {
+	display: block;
+	color: #777;
+	font-size: 0.95em;
+	color: #009999;
+	float: left;
+	width: 25%;
+	margin-bottom: 1.5%;
+}
+
+form[name="uploadForm"] label + a,
+form[name="editForm"] label + a {
+	float: right;
+}
+
+form[name="uploadForm"] label + a i,
+form[name="editForm"] label + a i {
+	color: #006666;
+}
+
+
+input[name="upload"],
+input[name="doneEdit"] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.95em;
+	outline: none;
+	border: none;
+	width: 35%;
+	padding: 2.5%;
+	margin: 0%;
+	border-radius: 2px;
+	background:  #008080;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.25s;
+}
+
+input[name="upload"]:hover,
+input[name="doneEdit"]:hover {
+	background: #009999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*** PROFILE PAGE ***/
+.profileDescriptions {
+	background-size: cover;
+}
+
+.profileDescriptions > div {
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 9% 5% 4.5%;
+}
+
+.imgDiv {
+	width: 40%;
+    padding-top: 40%;
+	margin: 0 30%;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid lightgrey;
+}
+
+.imgDiv img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.descriptions {
+	text-align: center;
+}
+
+.descriptions > p:first-of-type {
+	font-weight: 600;
+	font-size: 1.3em;
+	margin: 2.5%;
+	color: #b3b3b3;
+}
+
+
+.descriptions div {
+	margin: 0;
+}
+
+.descriptions div i {
+	transform: translateY(20%);
+	font-size: 1.2em;
+	color: #999999;
+}
+
+.descriptions div span {
+	font-size: 0.95em;
+	color: #999999;
+}
+
+.bio {
+	margin: 3% 7.5%;
+	font-size: 1em;
+	letter-spacing: 0.45px;
+	color: #cccccc;
+	font-style: italic;
+}
+
+.followBtn {
+	background: #009999;
+	padding: 2.5%;
+	margin: 5% 36%;
+	border-radius: 5%;
+	color: #e6e6e6;
+	letter-spacing: 0.75px;
+	border-bottom: 3px solid #006666;
+}
+
+.followBtn:hover {
+	background: #008080;
+	transition: all 0.2s;
+	border-bottom: 3px solid #003333;
+}
+
+.editProfileBtn {
+	display: block;
+	margin: 6% 35% 6%;
+	padding: 1.5% 2.5%;
+	color: #009999;
+	font-size: 0.96em;
+	border: 1px solid #a6a6a6;
+	border-radius: 2px;
+	transition: all 0.2s;
+}
+
+.editProfileBtn:hover {
+	border: 1px solid #cccccc;
+	color: #00b3b3;
+}
+
+
+.profileHeadings {
+	margin: 5% 0 3%;
+
+}
+
+.profileHeadings li {
+	/*background: green;*/
+	float: left;
+	width: 23.3333333333%;
+	padding: 0 2.5%;
+	margin: 0 2.5%;
+}
+
+
+.profileHeadings li a p  {
+	margin: 0;
+	text-align: center;
+}
+
+
+.profileHeadings li a p:first-of-type {
+	font-size: 0.8em;
+	font-weight: 600;
+	color: #666666;
+}
+
+.profileHeadings li a p:first-of-type + p {
+	/*background: grey;*/
+	font-size: 1.6em;
+	color: #404040;
+}
+
+
+.profileHeadings li:hover p:first-of-type {
+	color: #008080;
+}
+
+
+.profileHeadings li:hover p:first-of-type + p {
+	color: #006666;
+}
+
+
+/*.profile select {
+	width: 80%;
+	margin: 0.5% 10% 5%;
+	padding: 1% 1.25%;
+	border-radius: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	outline: none;
+	color: #333333;
+}*/
+
+/*.mealHeadings {
+	padding: 0 4%;
+}
+
+.mealHeadings li {
+	background: yellow;
+	float: left;
+	width: 22.5%;
+	margin: 0 1.25%;
+	text-align: center;
+}*/
+
+
+.profile .posts,
+.profile select {
+	/*display: none;*/
+}
+
+
+.followingOrFollowers {
+	display: none;
+	border-top: 1px solid lightgrey;
+	padding: 1.5% 2.5%;
+}
+
+.followingOrFollowers li {
+	float: left;
+	width: 40%;
+	margin: 4% 5%;
+	text-align: center;
+}
+
+.followingOrFollowers li a {
+	display: block;
+	text-align: center;
+}
+
+.followingOrFollowers li a:first-of-type {
+	width: 99%;
+	padding-top: 100%;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid lightgrey;
+}
+
+.followingOrFollowers li a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.followingOrFollowers li > a:first-of-type + a {
+	/*background: green;*/
+	margin: 5% 10%;
+	color: #404040;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.95em;
+}
+
+.follow {
+	background: #009999;
+	padding: 2%;
+	margin: 0 25%;
+	border-radius: 2px;
+	color: #f2f2f2;
+	font-size: 0.9em;
+	transition: all 0.1s;
+}
+
+
+.followingOrFollowers li > a:first-of-type + a + a:hover {
+	background: #00b3b3;
+	color: #fff;
+}
+
+
+.following {
+	background: #bfbfbf;
+	padding: 2%;
+	margin: 0 22%;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 0.9em;
+	transition: all 0.1s;
+}
+
+
+
+
+
+
+/*** SETTINGS AND PASSWORD PAGE ***/
+form[name="userDetails"] {
+	padding-top: 0.5%;
+}
+
+form[name="userDetails"] p:first-of-type {
+	font-size: 1.25em;
+	margin: 2.5% 8%;
+}
+
+form[name="userDetails"] p:first-of-type + p {
+	font-size: 0.95em;
+	margin: -1% 8% 3%;
+}
+
+form[name="userDetails"] .settingsError {
+	color: #b30000;
+}
+
+form[name="userDetails"] .settingsMessage {
+	color: #404040;
+}
+
+
+form[name="userDetails"] fieldset:first-of-type {
+	border-top: 1px solid #e6e6e6;
+}
+
+form[name="userDetails"] fieldset {
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 3% 7.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+form[name="userDetails"] label {
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+label[for="proImgFile"] {
+	width: 50%;
+    padding-top: 50%;
+	margin: 2% 25% 2.5% 25%;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid lightgrey;
+}
+
+label[for="proImgFile"] img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+
+form[name="userDetails"] input[type="file"],
+form[name="userDetails"] input[type="text"],
+form[name="userDetails"] input[type="password"],
+form[name="userDetails"] textarea {
+	padding: 2.5%;
+	width: 94%;
+	margin: 2.5% 0.5%;
+	border: 1px solid lightgrey;
+	outline: none;
+	border-radius: 2px;
+	color: #595959;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+}
+
+
+form[name="userDetails"] textarea {
+	height: 80px;
+}
+
+form[name="userDetails"] input[name="settingsSubmit"],
+form[name="userDetails"] input[name="passwordSubmit"] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.95em;
+	outline: none;
+	border: none;
+	width: 35%;
+	padding: 2.5%;
+	margin: 5% 14% 5% 8.5%;
+	border-radius: 3px;
+	background:  #008080;
+	color: #fff;
+	transition: all 0.25s;
+}
+
+
+form[name="userDetails"] input[name="settingsSubmit"]:hover,
+form[name="userDetails"] input[name="passwordSubmit"]:hover {
+	background: #009999;
+}
+
+
+form[name="userDetails"] a {
+	color: #333333;
+	font-size: 0.95em;
+	transition: all 0.1s;
+} 
+
+form[name="userDetails"] a:hover {
+	color: #008080;
+}
+
+.password section {
+	min-height: 87.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************
+		FOOTER 
+*************************/
+footer {
+	background: #f2f2f2;
+	padding: 3%;
+	border-top: 1px solid #e6e6e6;
+}
+
+footer p {
+	text-align: center;
+	color: #4d4d4d;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+/* Login Footer*/
+.login footer {
+	background: none;
+	padding: 0;
+	border-top: none;
+}
+
+.login footer p {
+	text-align: center;
+	color: #a6a6a6;
+	font-size: 0.96em;
+}
+
+
+
+/*********************************
+Clearfix
+The code below has been taken from: http://nicolasgallagher.com/micro-clearfix-hack
+The code will give floated elements their full height
+*********************************/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
